@@ -16,12 +16,14 @@ message CreateProductRequest{
   string name =1;
   int64 stock =2;
   int64 price =3;
+  int64 status =4;
 }
 
 message CreateProductResponse{
   string name =1;
-  int64 error =2;
+  string error =2;
   int64 id =3;
+  int64 status =4;
 }
 
 
